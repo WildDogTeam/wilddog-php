@@ -1,8 +1,5 @@
 # Wilddog PHP Client
 
-[![Build Status](https://drone.io/github.com/wilddogteam/wilddog-php/status.png)](https://drone.io/github.com/wilddogteam/wilddog-php/latest)
-
-
 基于 [Wilddog REST API](https://z.wilddog.com/rest/quickstart).
 
 ### 示例
