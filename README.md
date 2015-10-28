@@ -28,7 +28,9 @@ $name = $wilddog->get(DEFAULT_PATH . '/name/contact001');
 
 ### Token生成
 Token用于标识用户身份，结合 [规则表达式](https://z.wilddog.com/rule/quickstart) 做数据读写权限的控制。可以使用超级密钥本身做为token，这样的终端将获得管理员权限，读写数据操作不受规则表达式的限制。也可以使用超级密钥进行签名，自行生成标准jwt格式的token。
+
 token格式的文档参见：[https://z.wilddog.com/rule/guide/4](https://z.wilddog.com/rule/guide/4)。
+
 php版token生成工具：[wilddog-token-generator-php](https://github.com/WildDogTeam/wilddog-token-generator-php)。
 
 
