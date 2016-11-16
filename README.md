@@ -38,6 +38,7 @@ php版token生成工具：[wilddog-token-generator-php](https://github.com/WildD
 ```php
 
 // -- Wilddog API
+//注意: 所有数据API操作需要判断返回是否成功
 $wilddog->set($path, $value);   // 存储数据
 $value = $wilddog->get($path);  // 读取数据
 $wilddog->delete($path);        // 删除数据
@@ -70,7 +71,12 @@ public function setWilddogValue($path, $value) {
 
 ```php
 public function setWilddogValue($path, $value, $wilddog) {
-  $wilddog->set($path, $value);
+    $result = $wilddog->set($path, $value)
+    if ($result == null && $value != null) {
+        //若为null 则需要判断是否出现了异常
+        //只有set的$value为null时 set($path,$value)返回null
+        //其他情况为请求异常 需要用户进行判断重试
+    }
 }
 ```
 
