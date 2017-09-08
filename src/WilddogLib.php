@@ -1,7 +1,7 @@
 <?php
 namespace Wilddog;
 use \Exception;
-require_once 'wilddogInterface.php';
+require_once 'WilddogInterface.php';
 
 class WilddogLib implements WilddogInterface
 {
