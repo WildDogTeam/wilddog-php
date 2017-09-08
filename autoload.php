@@ -12,5 +12,7 @@ spl_autoload_register(function ($class) {
     $file = $base_dir .str_replace('\\', DIRECTORY_SEPARATOR, $class) . '.php';
     if (is_readable($file)) {
         require $file;
+    } else {
+        trigger_error('Cannot read file: ' . $file, E_USER_ERROR);
     }
 });

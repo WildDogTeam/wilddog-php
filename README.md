@@ -84,8 +84,8 @@ public function setWilddogValue($path, $value, $wilddog) {
 
 ```php
 <?php
-  require_once '<path>/lib/wilddogInterface.php';
-  require_once '<path>/lib/wilddogStub.php';
+  require_once '<path>/lib/WilddogInterface.php';
+  require_once '<path>/lib/WilddogStub.php';
 
   class MyClass extends PHPUnit_Framework_TestCase
   {
