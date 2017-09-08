@@ -1,0 +1,9 @@
+{
+  "name": "wilddogteam/wilddog-php",
+  "description": "Wilddog PHP Client.",
+  "autoload": {
+      "files": [
+          "autoload.php"
+      ]
+  }
+}
